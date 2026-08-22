@@ -2,9 +2,11 @@ import streamlit as st
 import joblib 
 import pandas as pd
 import pickle
+from pathlib import Path
 
-with open("model.pkl", "rb") as file:
-    model = joblib.load(file)
+MODEL_PATH = Path(__file__).parent/"model.pkl" 
+with open(MODEL_PATH, "rb") as file:
+    model = pickle.load(file)
 
 st.title("ML Prediction App")
 
