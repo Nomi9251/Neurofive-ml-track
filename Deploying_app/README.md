@@ -44,3 +44,5 @@ The model shows balanced errors, proving it is not heavily biased toward a singl
 ## 💻 How to Run the Pipeline
 1. Install dependencies: `pip install pandas scikit-learn`
 2. Run the script: `python titanic_survival_model.py`
+## Deployed App link
+https://nomi9251-neurofive-ml-track-deploying-appapp-g8acgk.streamlit.app/
