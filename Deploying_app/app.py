@@ -6,7 +6,7 @@ from pathlib import Path
 
 MODEL_PATH = Path(__file__).parent/"model.pkl" 
 with open(MODEL_PATH, "rb") as file:
-    model = pickle.load(file)
+    model = joblib.load(file)
 
 st.title("ML Prediction App")
 
